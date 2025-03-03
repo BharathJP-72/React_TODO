@@ -1,8 +1,61 @@
-# React + Vite
+# 📝 To-Do List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
+A **To-Do List** application built using **React** with robust state management and user authentication. This app allows users to create, update, and delete tasks while ensuring data persistence and a smooth user experience.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
+- **Frontend:** React, Context API, Redux
+- **State Management:** Reducer functions
+- **Authentication:** JWT-based authentication (or any method used)
+- **Styling:** CSS/TailwindCSS (mention if applicable)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
+- ✅ **User Authentication** (Sign-up & Login)
+- 📝 **CRUD Operations** (Add, edit, delete tasks)
+- 📌 **State Management** using Context API & Redux
+- 📂 **Persistent Data Handling** (Local Storage for task storage)
+- 📊 **User-friendly UI** for task organization
+
+## 📂 Project Structure
+```
+/ src
+  |-- components
+  |   |-- TaskList.js
+  |   |-- TaskItem.js
+  |-- context
+  |   |-- TaskContext.js
+  |-- reducers
+  |   |-- taskReducer.js
+  |-- auth
+  |   |-- SignUp.js
+  |   |-- Login.js
+  |-- App.js
+  |-- index.js
+```
+
+## 🔄 Installation & Setup
+```sh
+git clone https://github.com/yourusername/todo-app.git
+cd todo-app
+npm install
+npm start
+```
+
+## 🚀 Usage
+1. **Sign up** to create an account.
+2. **Log in** to manage your tasks.
+3. **Add new tasks**, mark them as complete, or delete them.
+4. **State is managed** using Redux & Context API.
+
+## 🌟 Future Enhancements
+- 📌 Add **due dates** & reminders
+- 📱 Improve **responsive design**
+- 🔗 Integrate with **a backend (e.g., FastAPI, Firebase, MongoDB)**
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+---
+
+Would you like to customize anything further, such as adding deployment instructions or API details? 😊
+
