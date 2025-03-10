@@ -55,7 +55,4 @@ npm start
 ## 📜 License
 This project is open-source and available under the **MIT License**.
 
----
-
-Would you like to customize anything further, such as adding deployment instructions or API details? 😊
 
