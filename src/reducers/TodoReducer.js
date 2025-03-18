@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TodoReducer(state, action) {
+function TodoReducer(state = [], action) {
   if (action.type == 'add_todo') {
     let nextId = state.length + 1
     return [...state,{id: nextId, text: action.payload.todoText, isFinished: false}]
@@ -19,7 +19,7 @@ function TodoReducer(state, action) {
         if (todo.id === action.payload.id) {
           todo.isFinished = action.payload.state
         }
-        return todo
+        return todo  
       })
       return newTodoList
   }

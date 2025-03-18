@@ -1,10 +1,8 @@
-
-import { useReducer, useState } from 'react'
 import './App.css'
 import TodoList from './components/TodoList/TodoList'
 import AddTodo from './components/addTodo/AddTodo'
-import TodoContext from './context/TodoContext'
-import TodoReducer from './reducers/TodoReducer'
+import store from './store'
+import { Provider } from 'react-redux'
 
 function App() {
 
@@ -15,14 +13,13 @@ function App() {
   //   setTodos([...todos, {id:nextId, isFinished: false, text: todoText }])
   // }
 
-  const [todos, dispatch] = useReducer(TodoReducer, [])
 
   return (
     <>
-     <TodoContext.Provider value={{todos, dispatch}}>
-      <AddTodo  />
-      <TodoList />
-     </TodoContext.Provider>
+      <Provider store = {store} >
+        <AddTodo  />
+        <TodoList />
+      </Provider>
     </>
   ) 
 }
