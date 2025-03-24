@@ -8,17 +8,22 @@ function Todo({text, isFinished, deleteTodo, editTodo, finishTodo}) {
   const [todoText, setTodoText] = useState(text)
 
   return (
-    <div>
-        <input type="checkbox" checked={isFinished} onChange={() => finishTodo(!isFinished)}/>
+    <div className='Todo'>
+        <input className='Checkbox' type="checkbox" checked={isFinished} onChange={() => finishTodo(!isFinished)}/>
         
-        {isEditing ? <input  value={todoText} onChange={(e) => setTodoText(e.target.value)}/> : <span> {todoText} </span> }
-        <button onClick={() => {
-          setIsEditing(!isEditing)
-          editTodo(todoText)
-        }}> 
-          {isEditing ? "Save" : "Edit"} 
-        </button>
-        <button onClick={deleteTodo}> Delete </button>
+        <div className='Text-container'>
+            {isEditing ? <input  value={todoText} onChange={(e) => setTodoText(e.target.value)}/> : <span> {todoText} </span> }
+        </div>
+
+        <div className='Btn-container'>
+          <button className='Edit-btn' onClick={() => {
+            setIsEditing(!isEditing)
+            editTodo(todoText)
+          }}> 
+            {isEditing ? "Save" : "Edit"} 
+          </button>
+          <button className='Delete-btn' onClick={deleteTodo}> Delete </button>
+        </div>
     </div>
 )
 }

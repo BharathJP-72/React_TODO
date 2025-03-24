@@ -16,10 +16,14 @@ function App() {
 
   return (
     <>
-      <Provider store = {store} >
-        <AddTodo  />
-        <TodoList />
-      </Provider>
+      <div className='App'>
+        <div className='Todo-container'>
+          <Provider store = {store} >
+            <AddTodo  />
+            <TodoList />
+          </Provider>
+        </div>
+      </div>
     </>
   ) 
 }

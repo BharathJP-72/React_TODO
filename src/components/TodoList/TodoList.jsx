@@ -22,7 +22,7 @@ function TodoList() {
 
   return (
     
-        todos && todos.map(
+          todos && todos.map(
             (todo) => <Todo 
             key={todo.id} 
             text={todo.text} 
@@ -32,6 +32,7 @@ function TodoList() {
             finishTodo={(state) => onFinishTodo(todo.id, state)}
             />
         )
+       
     
   )
 }

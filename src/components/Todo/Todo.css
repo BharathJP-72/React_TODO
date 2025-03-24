@@ -1,0 +1,72 @@
+.Todo {
+    display: flex;
+    background-color: rgb(202, 240, 248,0.3);
+    backdrop-filter: blur(30px);
+    color: azure;
+    padding: 15px;
+    margin-top: 10px;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.Todo button {
+    border: none;
+    padding: 7.5px 10px;
+    margin-left:5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: azure;
+}
+
+.Delete-btn{
+    background-color: #ef233c;
+}
+
+.Delete-btn:hover {
+    background-color: #d90429;
+}
+
+.Edit-btn {
+    background-color: #2b2d42;
+}
+
+.Edit-btn:hover {
+    background-color: #0d1321;
+}
+
+.Checkbox {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%; 
+    border: none; 
+    appearance: none; 
+    outline: none; 
+    cursor: pointer; 
+    background-color: #fff;
+}
+
+.Checkbox:checked {
+    background-color: #7ca982; 
+}
+
+.Text-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    font-size: larger;
+    text-align: start;
+    margin-left: 15px;
+    flex-grow: 1; 
+}
+
+
+.Text-container input {
+    margin: 10px;
+    padding: 2px 5px;
+    font-size: larger;
+    border-radius: 7.5px;
+    border: solid 1px;
+}

@@ -1,0 +1,25 @@
+.AddTodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AddTodo input {
+    height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+
+.AddTodo button {
+    height: 50px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    background-color: #90e0ef;
+}

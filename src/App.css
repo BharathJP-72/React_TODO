@@ -1,0 +1,20 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    /* border: solid 1.5px; */
+    background-color: rgba(202, 240, 248, 0.3);
+    backdrop-filter: blur(30px);
+}
+
+.Todo-container {
+    background-color: #ffffff66;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom , #08203e,#557c93 );
+    position: relative;
+    top: 75px;
+}
