@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <div className='App'>
+        <h2>TaskBlitz</h2>
         <div className='Todo-container'>
           <Provider store = {store} >
             <AddTodo  />
