@@ -36,7 +36,7 @@ A **To-Do List** application built using **React** with robust state management 
 ## 🔄 Installation & Setup
 ```sh
 git clone https://github.com/BharathJP-72/React_TODO.git
-cd todo-app
+cd React_TODO
 npm install
 npm start
 ```
