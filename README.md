@@ -6,8 +6,7 @@ A **To-Do List** application built using **React** with robust state management 
 ## 🔧 Tech Stack
 - **Frontend:** React, Context API, Redux
 - **State Management:** Reducer functions
-- **Authentication:** JWT-based authentication (or any method used)
-- **Styling:** CSS/TailwindCSS (mention if applicable)
+- **Styling:** CSS,TailwindCSS
 
 ## 🎯 Features
 - ✅ **User Authentication** (Sign-up & Login)
@@ -40,12 +39,6 @@ cd React_TODO
 npm install
 npm start
 ```
-
-## 🚀 Usage
-1. **Sign up** to create an account.
-2. **Log in** to manage your tasks.
-3. **Add new tasks**, mark them as complete, or delete them.
-4. **State is managed** using Redux & Context API.
 
 ## 🌟 Future Enhancements
 - 📌 Add **due dates** & reminders
